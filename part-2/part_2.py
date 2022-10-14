@@ -9,24 +9,26 @@ my_authors = ["C.S. Lewis", "Clement Davies", "Mark Twain",
 # Code here
 # Example: my_authors.append("H.G. Wells")
 my_authors.append("Karl Sagan")
+print(my_authors)
 
 # Now let's remove an element in the list
 
 # Code here
 # Example: my_authors.remove("H.G. Wells")
 my_authors.remove("Clement Davies")
+print(my_authors)
 
 # Now access an element by it's index. (Remember it indexes start at 0.)
 
 # Code here
 # Example: my_authors[2]
-my_authors[5]
+print(my_authors[5])
 
 # Now slice the list.
 
 # Code here
 # Example: my_authors[1:4]
-my_authors[4:6]
+print(my_authors[4:6])
 
 ### Step 2 - Tuples ###
 
@@ -53,6 +55,7 @@ list_author_set = {"Victor Hugo", "Charlotte Bronte", "Agatha Christie",
 # Code here
 # Example: my_author_set.add("J.R.R. Tolkien")
 list_author_set.add("Paul Martin")
+print(list_author_set)
 
 # Try adding the same author again, and be sure to print your set.
 

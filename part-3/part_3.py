@@ -1,9 +1,9 @@
 my_book = {
-    "title": "The Hunger Games",
-    "author": "Suzanne Collins",
-    "year": 2008,
-    "rating": 4.32,
-    "pages": 374
+    "title": "A Desolation Called Peace",
+    "author": "Arkady Martine",
+    "year": 2021,
+    "rating": 4.6,
+    "pages": 496
 }
 
 # Follow the instructions in this part of the project. Define and flesh out your function below, which should accept a dictionary as an argument when called, and return a string of the info in that book-dictionary in a user-friendly readable format.
@@ -19,17 +19,17 @@ def book_info():
 # Step: 2
 
 
-def book_info(d):
+def book_info(my_book):
     pass
 
 # Step: 3
 
 
-def book_info(d):
-    d = (
-        f'The books name is {my_book["title"]}, written by {my_book["author"]}, published in {my_book["year"]}, with a tatol of {my_book["pages"]} pages and a rating of {my_book["rating"]}!')
+def book_info(my_book):
+    book_string = (
+        f'The books name is {my_book["title"]}, written by {my_book["author"]}, published in {my_book["year"]}, with a total of {my_book["pages"]} pages and a rating of {my_book["rating"]}!')
 
-    return d
+    return book_string
 
 
 print(book_info(my_book))
@@ -44,25 +44,27 @@ def book_name(d):
     return d["title"]
 
 
-print(book_name(my_book))
-
-# function 2
-
-
 def book_details(d):
     return d.get("author")
-
-
-print(book_details(my_book))
-
-# function 3
 
 
 def book_year(d):
     return d["year"]
 
 
+def book_rating(d):
+    return d["rating"]
+
+
+def book_pages(d):
+    return d["pages"]
+
+
+print(book_name(my_book))
+print(book_details(my_book))
 print(book_year(my_book))
+print(book_rating(my_book))
+print(book_pages(my_book))
 
 # Finally, create at least three new functions that might be useful as we expand our home library app. Perhaps thing of a way you could accept additional arguments when the function is called? Also, imagine you have a list filled with dictionaries like above.
 
