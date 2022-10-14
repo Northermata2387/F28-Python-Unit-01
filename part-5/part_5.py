@@ -31,8 +31,8 @@ def add_new_book(book_source):
 
 
 # Code here
-with open("books.txt", "a") as f:
-    f.write("\nA Desolation Called Peace, Arkady Martine, 2021, 4.6, 496")
+# with open("books.txt", "a") as f:
+#     f.write("\nA Desolation Called Peace, Arkady Martine, 2021, 4.6, 496")
 
 
 # def view_books_original(book_source):
