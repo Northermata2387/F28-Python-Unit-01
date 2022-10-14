@@ -31,8 +31,8 @@ def add_new_book(book_source):
 
 
 # Code here
-# with open("books.txt", "a") as f:
-#     f.write("\nA Desolation Called Peace, Arkady Martine, 2021, 4.6, 496")
+with open("books.txt", "a") as f:
+    f.write("\nA Desolation Called Peace, Arkady Martine, 2021, 4.6, 496")
 
 
 # def view_books_original(book_source):
@@ -133,7 +133,7 @@ Type here: """)
                 f"\nYou have a total of {len(get_books_as_list_of_dictionaries(book_source))} books.\n")
         elif choice == "pages":
             print(
-                f"\nYour books have a total page count of{sum([x['pages'] for x in get_books_as_list_of_dictionaries(book_source)])} pages!\n")
+                f"\nYour books page count totals {sum([x['pages'] for x in get_books_as_list_of_dictionaries(book_source)])} pages!\n")
         elif choice == "best":
             print("\nHere is the best book...\n")
             get_book_printed(get_highest_rated_book(book_source))
@@ -150,4 +150,4 @@ Type here: """)
 
 
 if __name__ == "__main__":
-    main_menu('book_source')
+    main_menu("books.txt")
